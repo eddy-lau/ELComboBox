@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ELComboBox"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "Combo box for iOS."
 
 # This description is used to generate tags and improve search results.
