@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "ELComboBox"
   s.version          = "0.1.0"
-  s.summary          = "A short description of ELComboBox."
+  s.summary          = "Combo box for iOS."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,16 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+                       Combo box with auto-complete for iOS.
                        DESC
+                       
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/ELComboBox"
+  s.homepage         = "https://github.com/eddy-lau/ELComboBox"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Eddie Lau" => "eddie@touchutility.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/ELComboBox.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/eddy-lau/ELComboBox.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
+  s.requires_arc = false
 
   s.source_files = 'ELComboBox/Classes/**/*'
   s.resource_bundles = {
