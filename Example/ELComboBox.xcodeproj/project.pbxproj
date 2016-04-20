@@ -21,9 +21,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		6E3AF231372068C2101A5DD6 /* Pods_ELComboBox_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0491B44EFFA3D7CE934B7E /* Pods_ELComboBox_Example.framework */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		A697B2FB06309DF343E2F635 /* Pods_ELComboBox_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC2C6256893C9C7A3854118 /* Pods_ELComboBox_Tests.framework */; };
+		694FBCE5B7C2613C40A636B8 /* libPods-ELComboBox_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BFCB25940213B87D82B0B3 /* libPods-ELComboBox_Example.a */; };
+		F3649A23DD093AA2ED0597F5 /* libPods-ELComboBox_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE6613A3842AFDEE0000E7A /* libPods-ELComboBox_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,16 +36,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C0491B44EFFA3D7CE934B7E /* Pods_ELComboBox_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELComboBox_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E23D383437A837BEC7E162B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1315384556463D25CCC75C78 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2274D2A76E955F7464F12004 /* ELComboBox.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ELComboBox.podspec; path = ../ELComboBox.podspec; sourceTree = "<group>"; };
 		291A6523CA87B6AAE00BBD63 /* Pods-ELComboBox_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELComboBox_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELComboBox_Example/Pods-ELComboBox_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2BC2C6256893C9C7A3854118 /* Pods_ELComboBox_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELComboBox_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6628491CC64068009357FD /* Sample1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample1ViewController.h; sourceTree = "<group>"; };
 		2C66284A1CC64068009357FD /* Sample1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sample1ViewController.m; sourceTree = "<group>"; };
 		2C66284B1CC64068009357FD /* Sample2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample2ViewController.h; sourceTree = "<group>"; };
 		2C66284C1CC64068009357FD /* Sample2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sample2ViewController.m; sourceTree = "<group>"; };
+		34BFCB25940213B87D82B0B3 /* libPods-ELComboBox_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ELComboBox_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8453F7D79100BDF9D2B7CD /* Pods-ELComboBox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELComboBox_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELComboBox_Tests/Pods-ELComboBox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ELComboBox_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELComboBox_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,8 +63,8 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8F98E5D0C905C4164A6054CD /* Pods-ELComboBox_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELComboBox_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELComboBox_Example/Pods-ELComboBox_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BEE6613A3842AFDEE0000E7A /* libPods-ELComboBox_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ELComboBox_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E4970CEBBF379BB953ED45 /* Pods-ELComboBox_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELComboBox_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELComboBox_Tests/Pods-ELComboBox_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +76,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				6E3AF231372068C2101A5DD6 /* Pods_ELComboBox_Example.framework in Frameworks */,
+				694FBCE5B7C2613C40A636B8 /* libPods-ELComboBox_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +87,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				A697B2FB06309DF343E2F635 /* Pods_ELComboBox_Tests.framework in Frameworks */,
+				F3649A23DD093AA2ED0597F5 /* libPods-ELComboBox_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,8 +122,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				0C0491B44EFFA3D7CE934B7E /* Pods_ELComboBox_Example.framework */,
-				2BC2C6256893C9C7A3854118 /* Pods_ELComboBox_Tests.framework */,
+				34BFCB25940213B87D82B0B3 /* libPods-ELComboBox_Example.a */,
+				BEE6613A3842AFDEE0000E7A /* libPods-ELComboBox_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,7 +137,6 @@
 				2C66284C1CC64068009357FD /* Sample2ViewController.m */,
 				6003F59C195388D20070C39A /* ELAppDelegate.h */,
 				6003F59D195388D20070C39A /* ELAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -281,7 +278,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
