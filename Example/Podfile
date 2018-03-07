@@ -1,11 +1,11 @@
 #use_frameworks!
 
-target 'ELComboBox_Example', :exclusive => true do
+target 'ELComboBox_Example' do
   pod 'ELComboBox', :path => '../'
 end
 
-target 'ELComboBox_Tests', :exclusive => true do
+target 'ELComboBox_Tests' do
   pod 'ELComboBox', :path => '../'
 
-  
+
 end

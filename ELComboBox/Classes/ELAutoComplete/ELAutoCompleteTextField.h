@@ -23,5 +23,6 @@
 @property (nonatomic)           NSTextAlignment   textAlignment;
 @property (nonatomic)           UIReturnKeyType   returnKeyType;
 @property (nonatomic)           UIKeyboardType    keyboardType;
+@property (nonatomic,raedonly)  UIView           *inputAccessoryView;
 
 @end

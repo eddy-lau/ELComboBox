@@ -353,6 +353,14 @@
     return self.textField.textAlignment;
 }
 
+- (void) setInputAccessoryView:(UIView *)inputAccessoryView {
+    self.textField.inputAccessoryView = inputAccessoryView;
+}
+
+- (UIView *) inputAccessoryView {
+    return self.textField.inputAccessoryView;
+}
+
 - (void) setReturnKeyType:(UIReturnKeyType)returnKeyType {
     self.textField.returnKeyType = returnKeyType;
 }

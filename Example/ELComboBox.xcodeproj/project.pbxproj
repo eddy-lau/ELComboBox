@@ -202,12 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ELComboBox_Example" */;
 			buildPhases = (
-				A7586410019A8164C82B2369 /* Check Pods Manifest.lock */,
+				A7586410019A8164C82B2369 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				CDB18876F6166CB6127CBBB6 /* Embed Pods Frameworks */,
-				F4EEDBC5C34AF3B130CC99EE /* Copy Pods Resources */,
+				CDB18876F6166CB6127CBBB6 /* [CP] Embed Pods Frameworks */,
+				F4EEDBC5C34AF3B130CC99EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,12 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "ELComboBox_Tests" */;
 			buildPhases = (
-				1003B540D108643E34AF5D38 /* Check Pods Manifest.lock */,
+				1003B540D108643E34AF5D38 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				90F80896EED81678845104DD /* Embed Pods Frameworks */,
-				8E2208E270036824BACB8E46 /* Copy Pods Resources */,
+				90F80896EED81678845104DD /* [CP] Embed Pods Frameworks */,
+				8E2208E270036824BACB8E46 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,44 +294,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1003B540D108643E34AF5D38 /* Check Pods Manifest.lock */ = {
+		1003B540D108643E34AF5D38 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ELComboBox_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8E2208E270036824BACB8E46 /* Copy Pods Resources */ = {
+		8E2208E270036824BACB8E46 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ELComboBox_Tests/Pods-ELComboBox_Tests-resources.sh",
+				"$PODS_CONFIGURATION_BUILD_DIR/ELComboBox/ELComboBox.bundle",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELComboBox_Tests/Pods-ELComboBox_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		90F80896EED81678845104DD /* Embed Pods Frameworks */ = {
+		90F80896EED81678845104DD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,29 +345,32 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELComboBox_Tests/Pods-ELComboBox_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A7586410019A8164C82B2369 /* Check Pods Manifest.lock */ = {
+		A7586410019A8164C82B2369 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ELComboBox_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CDB18876F6166CB6127CBBB6 /* Embed Pods Frameworks */ = {
+		CDB18876F6166CB6127CBBB6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,15 +378,18 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELComboBox_Example/Pods-ELComboBox_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F4EEDBC5C34AF3B130CC99EE /* Copy Pods Resources */ = {
+		F4EEDBC5C34AF3B130CC99EE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ELComboBox_Example/Pods-ELComboBox_Example-resources.sh",
+				"$PODS_CONFIGURATION_BUILD_DIR/ELComboBox/ELComboBox.bundle",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
