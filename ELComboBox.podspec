@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ELComboBox"
-  s.version          = "1.1.0"
+  s.version          = "1.1.1"
   s.summary          = "Combo box for iOS."
 
 # This description is used to generate tags and improve search results.
@@ -33,9 +33,9 @@ Pod::Spec.new do |s|
   s.requires_arc = false
 
   s.source_files = 'ELComboBox/Classes/**/*'
-  s.resource_bundles = {
-    'ELComboBox' => ['ELComboBox/Assets/*.png']
-  }
+  #s.resource_bundles = {
+  #    'ELComboBox' => ['ELComboBox/Assets/*.png']
+  #  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
