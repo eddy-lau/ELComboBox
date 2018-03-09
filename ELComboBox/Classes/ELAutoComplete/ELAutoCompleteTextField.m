@@ -353,11 +353,11 @@
     return self.textField.textAlignment;
 }
 
-- (void) setInputAccessoryView:(UIView *)inputAccessoryView {
+- (void) setAccessoryView:(UIView *)inputAccessoryView {
     self.textField.inputAccessoryView = inputAccessoryView;
 }
 
-- (UIView *) inputAccessoryView {
+- (UIView *) accessoryView {
     return self.textField.inputAccessoryView;
 }
 
