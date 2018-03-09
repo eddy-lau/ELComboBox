@@ -292,6 +292,10 @@
 - (void) autoCompleteTextFieldDidChange:(ELAutoCompleteTextField *)textField {
 
     [self reloadData];
+    
+    if ([self.delegate respondsToSelector:@selector(comboBox:textFieldDidChange:)]) {
+        [self.delegate comboBox:self textFieldDidChange:self.textField];
+    }
 }
 
 - (void)autoCompleteTextFieldDidEndEditing:(ELAutoCompleteTextField *)textField {

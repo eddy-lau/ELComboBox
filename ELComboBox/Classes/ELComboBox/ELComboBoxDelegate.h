@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class ELComboBox;
+@class ELAutoCompleteTextField;
 @protocol ELComboBoxDelegate <NSObject>
 
 @optional
@@ -21,5 +22,6 @@
 - (void) comboBoxDidEndEditing:(ELComboBox *)comboBox;
 - (void) comboBox:(ELComboBox *)comboBox didSelectOptionAtIndexPath:(NSIndexPath *)indexPath;
 - (BOOL) comboBoxShouldReturn:(ELComboBox *)comboBox;
+- (void) comboBox:(ELComboBox *)comboBox textFieldDidChange:(ELAutoCompleteTextField *)textField;
 
 @end
