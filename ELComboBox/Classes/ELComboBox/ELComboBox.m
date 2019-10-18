@@ -97,8 +97,12 @@
         [self setOptionsViewFont:[UIFont systemFontOfSize:18] forState:UIControlStateNormal];
         [self setOptionsViewBackgroundColor:[UIColor clearColor] forState:UIControlStateNormal];
         [self setOptionsViewBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.1] forState:UIControlStateHighlighted];
-        [self setOptionsViewSectionTitleBackgroundColor:[UIColor colorWithRed:239.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1.0]];
-        
+        if (@available(iOS 13.0, *)) {
+            [self setOptionsViewSectionTitleBackgroundColor:[UIColor systemGray6Color]];
+        } else {
+            [self setOptionsViewSectionTitleBackgroundColor:[UIColor colorWithRed:239.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1.0]];
+        }
+
         /*
          * AutoCompleteTextField
          */
@@ -117,7 +121,12 @@
         layout.itemSize = [self optionsViewItemSize];
         
         self.optionsView = [[[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout] autorelease];
-        self.optionsView.backgroundColor = [UIColor whiteColor];
+        self.optionsView = [[[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout] autorelease];
+        if (@available(iOS 13.0, *)) {
+            self.optionsView.backgroundColor = [UIColor systemBackgroundColor];
+        } else {
+            self.optionsView.backgroundColor = [UIColor whiteColor];
+        }
         self.optionsView.dataSource = self;
         self.optionsView.delegate = self;
         [self.optionsView registerClass:[ELComboBoxOptionCell class] forCellWithReuseIdentifier:kCollectionViewCellId];

@@ -51,7 +51,11 @@
         self.titleLabel.autoresizingMask |= UIViewAutoresizingFlexibleHeight;
         self.titleLabel.autoresizingMask |= UIViewAutoresizingFlexibleWidth;
         self.titleLabel.textColor = [UIColor colorWithRed:109.0/255.0 green:109.0/255.0 blue:114.0/255.0 alpha:1.0];
-        self.titleLabel.backgroundColor = [UIColor colorWithRed:239.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1.0];
+        if (@available(iOS 13.0, *)) {
+            self.titleLabel.backgroundColor = [UIColor redColor];
+        } else {
+            self.titleLabel.backgroundColor = [UIColor colorWithRed:239.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1.0];
+        }
         [self addSubview:self.titleLabel];
         
         ELSectionHeaderBorderView *borderView = [[[ELSectionHeaderBorderView alloc] initWithFrame:self.bounds] autorelease];
